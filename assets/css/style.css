@@ -40,7 +40,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -48,8 +48,7 @@ body {
   height: calc(360px * 9 / 16);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: black;
-  color: aliceblue;
+
   border-radius: 10px;
   padding: 1em 2em;
   box-shadow: 0 10px 10px -4px rgba(0, 0, 0, 0.4);
@@ -65,12 +64,19 @@ body {
 }
 
 .project-name {
-  font-size: 2rem;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.done {
+  background: black;
+  color: aliceblue;
+}
+.not-done {
+  background: rgba(0, 0, 0, 0.8);
+  color: gray;
 }
 
 .footer {
@@ -81,6 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  min-height: 300px;
 }
 
 .footer__title {
