@@ -28,7 +28,7 @@ const names = [
   'Video-Speed-Controller-UI',
   'Countdown-Clock',
   'Whack-A-Mole-Game',
-  "That's-All-Folks!",
+  "That's-All-Folks",
 ]
 
 const doneTill = 1

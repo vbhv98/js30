@@ -10,8 +10,8 @@ const cardUI = (number, name, onClickID, enabled) => `
   <article class="project-card ${
     enabled ? 'done' : 'not-done'
   }" id="${enabled && onClickID}">
-    <span class="project-number">${String(number).padStart(2, '0')}</span>
-    <h3 class="project-name">${text_truncate(name, 24)}</h3>
+    <span class="project-number">#${String(number).padStart(2, '0')}</span>
+    <h3 class="project-name">${name}</h3>
   </article>
 `
 
