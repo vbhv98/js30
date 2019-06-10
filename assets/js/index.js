@@ -20,6 +20,6 @@ projectList.innerHTML = projectListHTML
 projectIDs.forEach(ID =>
   document.getElementById(ID).addEventListener('click', () => {
     const name = ID.split('_')[0]
-    window.open(`/${name}`, '_blank')
+    window.open(`/js30/${name}`, '_blank')
   }),
 )
