@@ -4,7 +4,7 @@ const projects = names.map((name, i) => {
   return {
     name,
     number: i + 1,
-    link: `/js30/${name}`,
+    link: `https://vbhv.me/js30/${name}`,
   }
 })
 
