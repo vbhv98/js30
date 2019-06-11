@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: transparent;
+  color: currentColor;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  align-content: center;
+  background: url(https://unsplash.it/1080) no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  grid-gap: 20px;
+}
+
+audio {
+  display: none;
+}
+
+.sound-key {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: orangered;
+  color: white;
+  border: 0.2em solid white;
+  height: 100px;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.sound-char {
+  flex: 1;
+  font-size: 3rem;
+}
+
+.sound-name {
+  text-transform: capitalize;
+}
+
+.sound-key.play {
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sound-key.play .sound-char {
+  flex: initial;
+}

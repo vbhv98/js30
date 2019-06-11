@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Drum Kit</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    hello
+    <div data-key="65" class="sound-key">
+      <span class="sound-char">A</span><span class="sound-name">clap</span>
+    </div>
+    <div data-key="83" class="sound-key">
+      <span class="sound-char">S</span><span class="sound-name">hihat</span>
+    </div>
+    <div data-key="68" class="sound-key">
+      <span class="sound-char">D</span><span class="sound-name">kick</span>
+    </div>
+    <div data-key="70" class="sound-key">
+      <span class="sound-char">F</span><span class="sound-name">openhat</span>
+    </div>
+    <div data-key="71" class="sound-key">
+      <span class="sound-char">G</span><span class="sound-name">boom</span>
+    </div>
+    <div data-key="72" class="sound-key">
+      <span class="sound-char">H</span><span class="sound-name">ride</span>
+    </div>
+    <div data-key="74" class="sound-key">
+      <span class="sound-char">J</span><span class="sound-name">snare</span>
+    </div>
+    <div data-key="75" class="sound-key">
+      <span class="sound-char">K</span><span class="sound-name">tom</span>
+    </div>
+    <div data-key="76" class="sound-key">
+      <span class="sound-char">L</span><span class="sound-name">tink</span>
+    </div>
+
+    <audio data-key="65" src="./sounds/clap.wav"></audio>
+    <audio data-key="83" src="./sounds/hihat.wav"></audio>
+    <audio data-key="68" src="./sounds/kick.wav"></audio>
+    <audio data-key="70" src="./sounds/openhat.wav"></audio>
+    <audio data-key="71" src="./sounds/boom.wav"></audio>
+    <audio data-key="72" src="./sounds/ride.wav"></audio>
+    <audio data-key="74" src="./sounds/snare.wav"></audio>
+    <audio data-key="75" src="./sounds/tom.wav"></audio>
+    <audio data-key="76" src="./sounds/tink.wav"></audio>
+    <script src="./index.js"></script>
   </body>
 </html>
