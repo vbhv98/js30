@@ -31,7 +31,7 @@ const names = [
   "That's-All-Folks",
 ]
 
-const doneTill = 1
+const doneTill = 2
 
 const projects = names.map((name, i) => {
   return {
