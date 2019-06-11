@@ -1,0 +1,153 @@
+* {
+  padding: 10px;
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  z-index: -1000;
+}
+
+.clock {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  color: aliceblue;
+  border: 2px double aliceblue;
+  box-shadow: 0 0 10px white;
+}
+
+.clock > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock::before {
+  box-shadow: 0 0 100px black inset;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: -10;
+  filter: blur(5px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.clock__numbers-list {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.clock__numbers-list > * {
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.num-1 {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+.num-2 {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.num-3 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.num-4 {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.num-5 {
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+.num-6 {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.num-7 {
+  transform: translate(-50%, -50%) rotate(-150deg);
+}
+.num-8 {
+  transform: translate(-50%, -50%) rotate(-120deg);
+}
+
+.num-9 {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+.num-10 {
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.num-11 {
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+.num-12 {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.clock__min {
+  padding: 0;
+  width: 6px;
+  transform-origin: 50% 100%;
+  height: 38%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: black;
+  /* transform: translate(-50%, -50%); */
+  z-index: 30;
+}
+
+.clock__hour {
+  padding: 0;
+  width: 6px;
+  transform-origin: 50% 100%;
+  height: 24%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: black;
+  /* transform: translate(-50%, -50%) rotate(0deg); */
+  z-index: 20;
+}
+
+.clock__sec {
+  padding: 0;
+  width: 4px;
+  transform-origin: 50% 100%;
+  height: 40%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: black;
+  /* transform: translate(-50%, -50%) rotate(0deg); */
+  z-index: 40;
+}
+
+.clock__center-knob {
+  padding: 5px;
+  border-radius: 50%;
+  background: black;
+  z-index: 50;
+}
