@@ -18,7 +18,7 @@ s.innerHTML = `
   }
   @keyframes clockhour {
     from {
-      transform: translate(-50%, -100%) rotate(${now.getHours() * (360/24)}deg);
+      transform: translate(-50%, -100%) rotate(${(now.getHours() %12) * (360/24)}deg);
     }
     to {
       transform: translate(-50%, -100%) rotate(${now.getHours() * 6 + 360}deg);
